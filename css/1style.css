@@ -1,0 +1,341 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finlandica:ital@1&display=swap');
+@import url('https://use.fontawesome.com/releases/v5.0.8/css/all.css');
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css');
+
+
+.row{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width:100%;
+    padding: 0px 0;
+}
+.col-2 h1{
+    font-size:50px;
+    line-height: 60px;
+    margin: 25px 0;
+    text-align: left;
+}
+.col-2 p{
+    text-align: left;
+}
+
+
+
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width:100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.384), 0 6px 20px 0 rgba(0, 0, 0, 0.384);
+}
+.scontainer{
+    max-width:1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.scontainer h2,h1{
+    text-align: center;
+}
+.scontainer h7{
+    text-decoration: line-through;
+}
+.col-4{
+    flex-basis:25%;
+    padding:10px;
+    min-width: 200px;
+    margin-bottom:50px;
+    transition: transform 0.5s;
+}
+.col-4 img{
+    width:100%;
+}
+.col-4 h3,h5{
+    text-align: center;
+
+}
+.col-4 p{
+    font-size:18px;
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}
+.col-5{
+    width: 10px;
+}
+.col-5 img{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+.row2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+.details{
+    margin:10px 0 10px;
+}
+.details span{
+    display:inline-block;
+    border:1px solid #000000;
+    margin-left: 10px;
+    width:70px;
+    text-align:center;
+    line-height: 40px;
+    cursor:pointer;
+}
+.details span:hover{
+    background:#000000f8;
+    color:rgb(240, 240, 240);
+}
+.sproduct{
+    margin-top: 80px;
+}
+.sproduct .col-2 img{
+    padding:0;
+}
+.sproduct .col-2{
+    padding:20px;
+}
+.sproduct h4{
+    margin:20px 0;
+    font-size:22px;
+    font-weight: bold;
+}
+.sproduct input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    border:1px solid #000000; 
+}
+
+.account{
+    padding:50px 0;
+    background:#ffffff;
+}
+.form-cont{
+    background: #fff;
+    border:1px solid #ccc;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding:20px 0;
+    margin:auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.form-cont span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+    
+.form-btn{
+    display: inline-block;
+}
+.form-cont form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 130px;
+    transition: transform 1s;
+}
+form input{
+    background:#f1f1f1d2;
+    width: 100%;
+    height:30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+}
+form .btn{
+    width: 100%;
+    border:none;
+    cursor:pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline:none;
+}
+#login{
+    left: -300px;
+}
+#register{
+    left:0;
+}
+form a{
+    font-size: 12px;
+}
+#indicator{
+    width: 100px;
+    height: 2px;
+    background:#000000;
+    border:none;
+    border-radius: 20px;
+    margin-top:8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+.container1{
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+  border: 1px solid #ccc;
+  margin-left: 80px;
+  margin-bottom: 50px;
+}
+.container1 .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container1 .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #ff523b;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #ff523b;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #000000;
+}
+.container .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #ff523b;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #f1f1f1d2;
+  border:1px solid #ccc;    
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+.right-side .button input[type="button"]{
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  outline: none;
+  border: none;
+  padding: 1px 16px;
+  border-radius: 6px;
+  background: #ff523b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.button input[type="button"]:hover{
+  background: #000000;
+}
+
+@media (max-width: 950px) {
+  .container1{
+    width: 90%;
+    padding: 30px 40px 40px 35px ;
+  }
+  .container1 .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .container1{
+    margin: 40px 0;
+    height: 100%;
+  }
+  .container1 .content{
+    flex-direction: column-reverse;
+  }
+ .container1 .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .container1 .content .left-side::before{
+   display: none;
+ }
+ .container1 .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+
